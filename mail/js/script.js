@@ -17,4 +17,11 @@ button.addEventListener('click', function () {
             found_iscritti = true;
         }
     }
+    // creo messaggio con contenuto in base al valore della variabile di controllo
+    if (found_iscritti === true) {
+        alert(`utente ${email.toLowerCase()} trovato`);
+    }
+    else {
+        alert(`utente ${email.toLowerCase()} non trovato`);
+    }
 });
