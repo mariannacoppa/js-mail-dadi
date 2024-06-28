@@ -14,6 +14,10 @@ button.addEventListener('click', function () {
     }
     else if (human_dice < pc_dice) {
         // SE il numero utente è minore del numero computer, appare un messaggio contenente la scritta "ritenta"
-        document.getElementById('result').innerText = "Ritenta"
+        document.getElementById('result').innerText = "Ritenta";
+    }
+    // ALTRIMENTI appare un messaggio con la scritta "pareggio"
+    else {
+        document.getElementById('result').innerText = "Pareggio";
     }
 })
