@@ -12,4 +12,8 @@ button.addEventListener('click', function () {
         // SE il numero utente è maggiore del numero computer, appare un messaggio contenente la scritta "hai vinto"
         document.getElementById('result').innerText = "Hai vinto!";
     }
+    else if (human_dice < pc_dice) {
+        // SE il numero utente è minore del numero computer, appare un messaggio contenente la scritta "ritenta"
+        document.getElementById('result').innerText = "Ritenta"
+    }
 })
